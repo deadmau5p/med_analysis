@@ -1,0 +1,231 @@
+/* Reset some basic elements */
+html,
+body,
+div,
+form,
+input,
+label,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* Use a box-sizing border-box for better control */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Set up body background and font */
+body {
+  background: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+.App {
+  max-width: 800px;
+  /* or any other max-width you prefer */
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type='text'] {
+  width: calc(100% - 22px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  display: block;
+  /* Center the button text */
+  width: 100%;
+  /* Use the full width of the button */
+  text-align: center;
+  /* Center the text inside the button */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.api-response {
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #e7f5ff;
+  border-left: 4px solid #007bff;
+  color: #0056b3;
+}
+
+.subgroup {
+  margin-bottom: 30px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  /* Center the group title and contents */
+}
+
+.subgroup h3 {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+  /* This will center the container of the button */
+}
+
+.submit-button-container button {
+  max-width: 300px;
+  /* Set the max-width of the button */
+  margin: 0 auto;
+  /* This will center the button within the flex container */
+  padding: 10px 20px;
+  /* Add padding to make the button look bigger */
+  /* Additional styling */
+  display: block;
+  /* Center the button text */
+  width: 100%;
+  /* Use the full width of the button within the max-width specified */
+}
+
+.unit {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.reference {
+  margin-left: 8px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.input-container .reference {
+  flex-shrink: 0;
+  /* Prevents reference from shrinking */
+  margin-left: auto;
+  /* Pushes the reference to the end of the container */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  margin-right: 10px;
+  width: 150px;
+  /* Adjust the width as needed */
+  white-space: nowrap;
+  /* Ensure the label text does not wrap */
+}
+
+.input-container .unit {
+  margin-left: 10px;
+}
+
+
+input[type='number'] {
+  width: 100px;
+  /* or any other suitable width */
+  padding: 5px;
+  margin-right: 5px;
+  /* gives some space between the input and the unit */
+  text-align: right;
+  /* aligns the input text to the right */
+}
+
+.gender-selection-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* This centers the items horizontally */
+  margin: 20px 0;
+  /* Add some space above and below the gender selection */
+}
+
+.gender-instruction {
+  margin-right: 20px;
+  /* Space before the gender labels */
+  font-weight: bold;
+}
+
+.gender-label {
+  margin: 0 10px;
+  /* Spacing between the radio buttons */
+  display: flex;
+  align-items: center;
+  /* Aligns the radio button with the text */
+}
+
+/* Optional: Customize the appearance of the radio buttons */
+.gender-label input[type='radio'] {
+  margin-right: 5px;
+  /* Space between the radio button and the label text */
+}
+
+.loading-indicator {
+  text-align: center;
+  /* Add more styles as needed, maybe animations or a spinner image */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group textarea {
+  width: 100%;
+  /* Full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: auto;
+  /* Or set a fixed height if preferred */
+  resize: vertical;
+  /* Allows the user to resize the textarea vertically */
+}
+
+.api-response-content {
+  white-space: pre-wrap;
+  /* Ensures that the line breaks and spaces are preserved */
+}
+
+.toggle-button {
+  /* Styles for your collapse/expand button */
+  display: block;
+  margin: 10px auto;
+  padding: 5px 15px;
+  /* Add more styling as needed */
+}
